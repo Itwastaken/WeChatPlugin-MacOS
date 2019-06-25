@@ -38,7 +38,7 @@ curl -o- -L https://raw.githubusercontent.com/lmk123/oh-my-wechat/master/install
 
 ![Permission denied.png](http://upload-images.jianshu.io/upload_images/965383-11e4480553ba086e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* 下载 WeChatPlugin, 进行`Pod install`。
+* 下载 WeChatPlugin, 进行 `pod install`。
 * 用Xcode打开，编辑 Scheme，在 Debug 模式下启动 WeChat。
 ![](http://upload-images.jianshu.io/upload_images/965383-26dbb068acb8998f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![edit scheme](http://upload-images.jianshu.io/upload_images/965383-7fbd4dc6e8d161dc.gif?imageMogr2/auto-orient/strip)
