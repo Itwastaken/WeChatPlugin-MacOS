@@ -1,10 +1,13 @@
 ## 导出微信聊天记录到 sqlite 数据库
 
-- 在 微信小助手 菜单中开启 Enable Alfred 这个选项
+- 在 __微信小助手__ 菜单中开启 `Enable Alfred` 这个选项
 - `wget -O chatlog-foo.json "http://localhost:52700/wechat-plugin/chatlog?userId={userId}&count=1500"`
 - `bundler exec ruby chatlog-sqlite.rb chatlog-foo.json`
 
 <hr>
+分割线下面是 TKkk-iOSer/WeChatPlugin-MacOS 项目原始文档
+<hr>
+
 
 ![微信小助手.png](./Other/ScreenShots/wechatplugin.png)
 
