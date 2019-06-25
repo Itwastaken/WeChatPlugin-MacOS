@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    prettier (0.12.3)
     sequel (5.21.0)
     sqlite3 (1.4.1)
 
@@ -8,6 +9,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  prettier
   sequel
   sqlite3
 
