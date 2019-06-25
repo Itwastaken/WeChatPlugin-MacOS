@@ -49,4 +49,4 @@ messages.each do |msg|
   conversation.insert(msg2)
 end
 
-puts "Item count: #{conversation.count}"
+puts "conversations: #{conversation.count}"
