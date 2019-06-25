@@ -2,7 +2,9 @@
 
 - 在 __微信小助手__ 菜单中开启 `Enable Alfred` 这个选项
 - `wget -O chatlog-foo.json "http://localhost:52700/wechat-plugin/chatlog?userId={userId}&count=1500"`
-- `bundler exec ruby chatlog-sqlite.rb chatlog-foo.json`
+- `bundle exec ruby chatlog-sqlite.rb chatlog-foo.json`
+
+Tested with Ruby v2.6.3, Bundler version 2.0.2
 
 <hr>
 分割线下面是 TKkk-iOSer/WeChatPlugin-MacOS 项目原始文档
