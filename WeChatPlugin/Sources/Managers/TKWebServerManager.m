@@ -484,7 +484,13 @@ static int port=52700;
              @"userId": msgContact.m_nsUsrName,
              @"url": url ?: @"",
              @"copyText": url ?: title,
-             @"srvId": @(voiceMessSvrId)
+             @"srvId": @(voiceMessSvrId),
+             @"createdAt": @(msgData.msgCreateTime),
+             @"fromUsrName": msgData.fromUsrName,
+             @"toUsrName": msgData.toUsrName,
+             @"mesSvrID": @(msgData.mesSvrID),
+             @"mesLocalID": @(msgData.mesLocalID),
+             @"messageType": @(msgData.messageType)
              };
 }
 
