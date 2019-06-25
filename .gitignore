@@ -7,3 +7,11 @@
 #
 Pods/
 Podfile.lock
+Other/Products/Debug/
+*.pbxuser
+
+xcshareddata/
+xcuserdata/
+*.json
+*.db
+.vscode/
