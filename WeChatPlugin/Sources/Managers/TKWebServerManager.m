@@ -483,15 +483,20 @@ static int port=52700;
              @"icon": imgPath,
              @"userId": msgContact.m_nsUsrName,
              @"url": url ?: @"",
-             @"copyText": url ?: title,
-             @"srvId": @(voiceMessSvrId),
-             @"createdAt": @(msgData.msgCreateTime),
+             @"content": url ?: title,
+             @"createdAt": [self getDateStringWithTime: msgData.msgCreateTime],
              @"fromUsrName": msgData.fromUsrName,
              @"toUsrName": msgData.toUsrName,
-             @"mesSvrID": @(msgData.mesSvrID),
-             @"mesLocalID": @(msgData.mesLocalID),
+             @"id": @(msgData.mesSvrID),
              @"messageType": @(msgData.messageType)
              };
+}
+
+- (NSString *)getDateStringWithTime:(NSTimeInterval)time {
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:time];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    return [formatter stringFromDate:date];
 }
 
 - (NSString *)getDateStringWithTimeStr:(NSTimeInterval)time {
