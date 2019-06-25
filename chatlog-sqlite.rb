@@ -22,7 +22,7 @@ end
 conversation = DB[:conversation]
 
 file = File.open(ARGV[0]) 
-messages = JSON.load file # the json data requested from `http://localhost:52700/wechat-plugin/chatlog?userId={userId}&count={count}`
+messages = JSON.load file # the json data is requested from `http://localhost:52700/wechat-plugin/chatlog?userId={userId}&count={count}`
 file.close
 messages.each do |msg|
   msg2 = {
